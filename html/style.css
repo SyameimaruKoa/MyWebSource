@@ -1,104 +1,107 @@
 html {
-	height: 100%;
+  height: 100%;
 }
 
 body {
-	font-family: 'Klee One', cursive;
-	height: 100%;
-	margin: 0;
-	font-size: medium;
+  font-family: "Klee One", cursive;
+  height: 100%;
+  margin: 0;
+  font-size: medium;
 }
 
 header {
-	background-image: url(img/roki.webp);
-	background-size:cover;
-	background-color: black;
-	height: 260px;
-	background-position: center;
-	color: cornsilk;
-	text-shadow: 10px 10px 20px plum;
-	font-size: xxx-large;
-	font-family: 'Rampart One', cursive;
-	text-align: center;
-	line-height: 200px;
+  background-image: url(img/roki.webp);
+  background-size: cover;
+  background-color: black;
+  height: 260px;
+  background-position: center;
+  color: cornsilk;
+  text-shadow: 10px 10px 20px plum;
+  font-size: xxx-large;
+  font-family: "Rampart One", cursive;
+  text-align: center;
+  line-height: 200px;
 }
 
-nav {
-	background-color: #b93c3c;
-	padding-top: 10px;
-	padding-bottom: 10px;
+.GlobalNavigation {
+  background-color: #b93c3c;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-nav ul {
-	margin-top: 0px;
-	margin-bottom: 0px;
-	text-align: center;
+.GlobalNavigation ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
 }
-nav li {
-	display: inline-block;
-	margin-right: 40px;
+.GlobalNavigation li {
+  display: inline-block;
+  margin-right: 40px;
+}
+.GlobalNavigation a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: larger;
 }
 nav a {
-	color: #ffffff;
-	text-decoration: none;
-	font-size: larger;
+  font-size: larger;
 }
 
-.Duo{
-	margin-bottom: 1.5rem;
+.Duo {
+  margin-bottom: 1.5rem;
 }
 .Duo169Contents {
-	position: relative;
-	height: 0;
-	margin-bottom: 20px;
-	padding-bottom: 56.25%;
-	overflow: hidden;
+  position: relative;
+  height: 0;
+  margin-bottom: 20px;
+  padding-bottom: 56.25%;
+  overflow: hidden;
 }
 .Duo169Contents iframe {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 .Duo209Contents {
-	position: relative;
-	height: 0;
-	margin-bottom: 20px;
-	padding-bottom: 45%;
-	overflow: hidden;
+  position: relative;
+  height: 0;
+  margin-bottom: 20px;
+  padding-bottom: 45%;
+  overflow: hidden;
 }
 .Duo209Contents iframe {
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 100%;
-	height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
-.Duo img{
-	width: 100%;
+.Duo img {
+  width: 100%;
 }
 @media screen and (min-width: 600px) {
-	.Duo169-right{
-		float: right;
-		width: 49.5%;
-	}
-	.Duo169-left{
-		float: left;
-		width: 49.5%;
-	}
-	.Duo209-right{
-		float: right;
-		width: 49.5%;
-	}
-	.Duo209-left{
-		float: left;
-		width: 49.5%;
-	}
-	.Duo:after{
-		display: block;
-		clear: both;
-		content: "";
-	}
+  .Duo169-right {
+    float: right;
+    width: 49.5%;
+  }
+  .Duo169-left {
+    float: left;
+    width: 49.5%;
+  }
+  .Duo209-right {
+    float: right;
+    width: 49.5%;
+  }
+  .Duo209-left {
+    float: left;
+    width: 49.5%;
+  }
+  .Duo:after {
+    display: block;
+    clear: both;
+    content: "";
+  }
 }
 
 /*リンクボタンデザイン
@@ -107,87 +110,94 @@ nav a {
 *,
 *:before,
 *:after {
-	-webkit-box-sizing: inherit;
-	box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
 .btn,
 a.btn,
 button.btn {
-	font-size: 1.6rem;
-	font-weight: 700;
-	line-height: 1.5;
-	position: relative;
-	display: inline-block;
-	padding: 1rem 4rem;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-	text-align: center;
-	vertical-align: middle;
-	text-decoration: none;
-	letter-spacing: 0.1em;
-	color: #212529;
-	border-radius: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
 }
 
 .btn--orange,
 a.btn--orange {
-	color: #fff;
-	background-color: #eb6100;
+  color: #fff;
+  background-color: #eb6100;
 }
 
 .btn--orange:hover,
 a.btn--orange:hover {
-	color: #fff;
-	background: #f56500;
+  color: #fff;
+  background: #f56500;
 }
 
 a.btn--radius {
-	border-radius: 100vh;
+  border-radius: 100vh;
 }
 /*リンクボタンデザインここまで*/
 
 .Waku {
-	background-image: url(wp-content/layout/left_top03.png), url(wp-content/layout/right_top03.png), url(wp-content/layout/left_bottom03.png), url(wp-content/layout/right_bottom03.png), url(wp-content/layout/top03.png), url(wp-content/layout/bottom03.png), url(wp-content/layout/left03.png), url(wp-content/layout/right03.png);
-	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-x, repeat-x, repeat-y, repeat-y;
-	background-position: left top, right top, left bottom, right bottom, top, bottom, left, right;
-	background-color: #FFFFFF;
-	-webkit-box-sizing : border-box;
-	-moz-box-sizing : border-box;
-	box-sizing : border-box;
-	padding: 40px;
+  background-image: url(wp-content/layout/left_top03.png),
+    url(wp-content/layout/right_top03.png),
+    url(wp-content/layout/left_bottom03.png),
+    url(wp-content/layout/right_bottom03.png), url(wp-content/layout/top03.png),
+    url(wp-content/layout/bottom03.png), url(wp-content/layout/left03.png),
+    url(wp-content/layout/right03.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-x,
+    repeat-x, repeat-y, repeat-y;
+  background-position: left top, right top, left bottom, right bottom, top,
+    bottom, left, right;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px;
 }
 .title {
-	font-size: 30px;
-	font-family: 'Kiwi Maru', serif;
-	border-left-style: solid;
-	border-left-width: 10px;
-	padding-left: 15px;
-	margin-bottom: 50px;
+  font-size: 30px;
+  font-family: "Kiwi Maru", serif;
+  border-left-style: solid;
+  border-left-width: 10px;
+  padding-left: 15px;
+  margin-bottom: 50px;
 }
 .Waku p {
-	color: #020241;
-	font-size: 23px;
-	line-height: 160%;
+  color: #020241;
+  font-size: 23px;
+  line-height: 160%;
 }
 .Waku img {
-	float: center;
-	text-align: right;
-	width: 32%;
+  float: center;
+  text-align: right;
+  width: 32%;
 }
 .Waku video {
-	float: center;
-	text-align: right;
-	width: 32%;
+  float: center;
+  text-align: right;
+  width: 32%;
 }
