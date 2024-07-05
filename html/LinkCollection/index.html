@@ -5,36 +5,20 @@
     <meta charset="UTF-8">
     <title>自分向けリンク集</title>
     <link rel="stylesheet" href="style.css">
+
     <script>
-        document.getElementById('toggleButton').addEventListener('click', function () {
-            var style = document.getElementById('dynamic-style');
-            if (style.innerHTML.includes('display: none;')) {
-                style.innerHTML = `
-                    .active {
-                        display: block;
-                        color: red; /* 有効化されたCSSの例 */
-                        font-size: 20px;
-                    }
-                `;
-                document.getElementById('content').classList.add('active');
-            } else {
-                style.innerHTML = `
-                    .active {
-                        display: none;
-                    }
-                `;
-                document.getElementById('content').classList.remove('active');
-            }
+        document.getElementById('loadStyleButton').addEventListener('click', function () {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'style.css';
+            document.head.appendChild(link);
         });
     </script>
 </head>
 
 <body>
     <h1>ここには自分のブクマが使えない時用のよく使うリンクを置いています</h1>
-    <button id="toggleButton">CSSを有効化♡</button>
-    <div id="content">
-        ここがCSSで変わるよ♡
-    </div>
+    <button id="loadStyleButton">スタイルを読み込む♡</button>
 
     <a href="javascript:history.back();">🔙戻る</a><br>
     <nav>
