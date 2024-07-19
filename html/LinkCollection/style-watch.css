@@ -1,0 +1,58 @@
+@charset "UTF-8";
+body {
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+nav h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+nav ol {
+  padding-left: 20px;
+}
+
+nav li {
+  margin-bottom: 5px;
+}
+
+a {
+  display: block;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #e0e0e0;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+a:hover {
+  background-color: #d0d0d0;
+}
+
+@media (max-width: 320px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  nav h3 {
+    font-size: 16px;
+  }
+
+  a {
+    padding: 8px;
+    margin: 3px 0;
+  }
+}
