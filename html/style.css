@@ -255,9 +255,16 @@ a.btn--radius {
   font-size: 23px;
   line-height: 160%;
 }
+.Waku .image-container {
+  display: flex;
+  justify-content: space-between; /* 画像の間にスペースを入れる */
+  flex-wrap: wrap; /* 必要に応じて折り返し */
+  gap: 10px; /* 画像間のスペース */
+}
 .Waku video,
 .Waku img {
   float: center;
   text-align: right;
   width: 32%;
+  height: auto;
 }
