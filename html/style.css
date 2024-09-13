@@ -231,21 +231,7 @@ a.btn--radius {
   padding-left: 15px;
   margin-bottom: 50px;
 }
-.Waku p {
-  color: #020241;
-  font-size: 23px;
-  line-height: 160%;
-}
-.Waku img {
-  float: center;
-  text-align: right;
-  width: 32%;
-}
-.Waku video {
-  float: center;
-  text-align: right;
-  width: 32%;
-}
+
 */
 
 /*新枠デザイン*/
@@ -269,9 +255,9 @@ a.btn--radius {
   font-size: 23px;
   line-height: 160%;
 }
-
-.Waku img, .Waku video {
-  display: block;
-  margin: 0 auto;
+.Waku video,
+.Waku img {
+  float: center;
+  text-align: right;
   width: 32%;
 }
