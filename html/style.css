@@ -205,7 +205,7 @@ a.btn--radius {
 }
 /*リンクボタンデザインここまで*/
  
-/*旧枠デザイン
+旧枠デザイン
 .Waku {
   background-image: url(wp-content/layout/left_top03.png),
     url(wp-content/layout/right_top03.png),
@@ -231,10 +231,24 @@ a.btn--radius {
   padding-left: 15px;
   margin-bottom: 50px;
 }
+.Waku p {
+  color: #020241;
+  font-size: 23px;
+  line-height: 160%;
+}
+.Waku img {
+  float: center;
+  text-align: right;
+  width: 32%;
+}
+.Waku video {
+  float: center;
+  text-align: right;
+  width: 32%;
+}
 
-*/
 
-/*新枠デザイン*/
+/*新枠デザイン
 .Waku {
   border: 5px solid #000; /* 枠の太さと色 */
   padding: 40px; /* 内側の余白 */
@@ -271,3 +285,4 @@ a.btn--radius {
   width: 100%; /* 画像が親要素(picture)に合わせてサイズを調整 */
   height: auto;
 }
+*/
