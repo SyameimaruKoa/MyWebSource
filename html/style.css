@@ -204,7 +204,8 @@ a.btn--radius {
   border-radius: 100vh;
 }
 /*リンクボタンデザインここまで*/
-
+ 
+/*旧枠デザイン
 .Waku {
   background-image: url(wp-content/layout/left_top03.png),
     url(wp-content/layout/right_top03.png),
@@ -243,5 +244,34 @@ a.btn--radius {
 .Waku video {
   float: center;
   text-align: right;
+  width: 32%;
+}
+*/
+
+/*新枠デザイン*/
+.Waku {
+  border: 5px solid #000; /* 枠の太さと色 */
+  padding: 40px; /* 内側の余白 */
+  background-color: #ffffff; /* 背景色 */
+  box-sizing: border-box; /* 枠とパディングを含めたボックスサイズ */
+}
+
+.title {
+  font-size: 30px;
+  font-family: "Kiwi Maru", serif;
+  border-left: 10px solid #000; /* タイトルの左側にのみ線を追加 */
+  padding-left: 15px;
+  margin-bottom: 50px;
+}
+
+.Waku p {
+  color: #020241;
+  font-size: 23px;
+  line-height: 160%;
+}
+
+.Waku img, .Waku video {
+  display: block;
+  margin: 0 auto;
   width: 32%;
 }
