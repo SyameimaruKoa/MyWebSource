@@ -257,13 +257,17 @@ a.btn--radius {
 }
 .Waku .image-container {
   display: flex;
-  justify-content: space-between; /* 画像の間にスペースを入れる */
-  flex-wrap: wrap; /* 必要に応じて折り返し */
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 10px; /* 画像間のスペース */
 }
-.Waku video,
+
+.Waku picture {
+  display: block;
+  width: 32%; /* 3列に収まるように幅を設定 */
+}
+
 .Waku img {
-  float: center;
-  text-align: right;
-  width: 32%;
+  width: 100%; /* 画像が親要素(picture)に合わせてサイズを調整 */
+  height: auto;
 }
