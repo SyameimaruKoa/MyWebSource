@@ -23,6 +23,24 @@ header {
   line-height: 200px;
 }
 
+footer {
+  background-color: #f1f1f1; /* 背景色を淡いグレーに */
+  text-align: center; /* テキストを中央揃え */
+  padding: 20px; /* 上下左右に20pxの余白 */
+  border-top: 2px solid #ccc; /* 上に薄いグレーのボーダー */
+}
+footer a {
+  color: #007BFF; /* リンクの色を青に */
+  text-decoration: none; /* 下線を消す */
+}
+footer a:hover {
+  text-decoration: underline; /* ホバー時に下線を表示 */
+  color: #0056b3; /* ホバー時に色を少し濃く */
+}
+footer small {
+  font-size: 0.8em; /* 小さいフォントサイズ */
+}
+
 .GlobalNavigation {
   background-color: #b93c3c;
   padding-top: 10px;
