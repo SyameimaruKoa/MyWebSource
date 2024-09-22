@@ -23,12 +23,6 @@ header {
   line-height: 200px;
 }
 
-footer {
-  background-color: #f1f1f1; /* 背景色を淡いグレーに */
-  text-align: center; /* テキストを中央揃え */
-  padding: 20px; /* 上下左右に20pxの余白 */
-  border-top: 2px solid #ccc; /* 上に薄いグレーのボーダー */
-}
 footer a {
   color: #007BFF; /* リンクの色を青に */
   text-decoration: none; /* 下線を消す */
@@ -205,50 +199,9 @@ a.btn--radius {
 }
 /*リンクボタンデザインここまで*/
  
-旧枠デザイン
-.Waku {
-  background-image: url(wp-content/layout/left_top03.png),
-    url(wp-content/layout/right_top03.png),
-    url(wp-content/layout/left_bottom03.png),
-    url(wp-content/layout/right_bottom03.png), url(wp-content/layout/top03.png),
-    url(wp-content/layout/bottom03.png), url(wp-content/layout/left03.png),
-    url(wp-content/layout/right03.png);
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-x,
-    repeat-x, repeat-y, repeat-y;
-  background-position: left top, right top, left bottom, right bottom, top,
-    bottom, left, right;
-  background-color: #ffffff;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 40px;
-}
-.title {
-  font-size: 30px;
-  font-family: "Kiwi Maru", serif;
-  border-left-style: solid;
-  border-left-width: 10px;
-  padding-left: 15px;
-  margin-bottom: 50px;
-}
-.Waku p {
-  color: #020241;
-  font-size: 23px;
-  line-height: 160%;
-}
-.Waku img {
-  float: center;
-  text-align: right;
-  width: 32%;
-}
-.Waku video {
-  float: center;
-  text-align: right;
-  width: 32%;
-}
+/*旧枠はold.htmlの埋め込みCSSに移動*/
 
-
-/*新枠デザイン
+/* 新枠デザイン */
 .Waku {
   border: 5px solid #000; /* 枠の太さと色 */
   padding: 40px; /* 内側の余白 */
@@ -282,7 +235,6 @@ a.btn--radius {
 }
 
 .Waku img {
-  width: 100%; /* 画像が親要素(picture)に合わせてサイズを調整 */
+  width: 256px; /* 画像が親要素(picture)に合わせてサイズを調整 */
   height: auto;
 }
-*/
