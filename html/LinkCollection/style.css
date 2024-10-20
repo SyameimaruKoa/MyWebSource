@@ -25,6 +25,14 @@ h3 {
     margin-top: 20px;
 }
 
+h4 {
+    font-size: 16px;
+    margin-top: 15px;
+    color: #666;
+    font-weight: bold;
+}
+
+
 ol {
     margin: 10px 0 20px 20px;
 }
