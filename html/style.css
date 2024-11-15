@@ -198,7 +198,14 @@ a.btn--radius {
   border-radius: 100vh;
 }
 /*リンクボタンデザインここまで*/
- 
+
+#EmbeddedLink div {
+ padding-bottom: 0.5rem;
+}
+#EmbeddebLink div a {
+  padding: 1rem;
+}
+
 /*旧枠はold.htmlの埋め込みCSSに移動*/
 
 /* 新枠デザイン */
