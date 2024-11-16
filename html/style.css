@@ -24,22 +24,31 @@ header {
 }
 
 footer a {
-  color: #007BFF; /* リンクの色を青に */
-  text-decoration: none; /* 下線を消す */
+  color: #007BFF;
+  /* リンクの色を青に */
+  text-decoration: none;
+  /* 下線を消す */
 }
+
 footer a:hover {
-  text-decoration: underline; /* ホバー時に下線を表示 */
-  color: #0056b3; /* ホバー時に色を少し濃く */
+  text-decoration: underline;
+  /* ホバー時に下線を表示 */
+  color: #0056b3;
+  /* ホバー時に色を少し濃く */
 }
+
 footer small {
-  font-size: 0.8em; /* 小さいフォントサイズ */
+  font-size: 0.8em;
+  /* 小さいフォントサイズ */
 }
 
 .GlobalNavigation {
   background-color: #b93c3c;
   padding: 10px 0;
-  border: 2px solid #8c2323; /* 外枠を追加 */
-  border-radius: 5px; /* 少し丸みを追加 */
+  border: 2px solid #8c2323;
+  /* 外枠を追加 */
+  border-radius: 5px;
+  /* 少し丸みを追加 */
 }
 
 .GlobalNavigation ul {
@@ -50,107 +59,79 @@ footer small {
 
 .GlobalNavigation li {
   display: inline-block;
-  margin: 0 20px; /* 左右の間隔を調整 */
+  margin: 0 20px;
+  /* 左右の間隔を調整 */
 }
 
 .GlobalNavigation a {
   color: #ffffff;
   text-decoration: none;
   font-size: larger;
-  padding: 5px 10px; /* 領域を広げる */
-  border: 1px solid transparent; /* 初期状態でボーダーを透明に */
-  border-radius: 3px; /* ボタンのようにするため角を丸く */
+  padding: 5px 10px;
+  /* 領域を広げる */
+  border: 1px solid transparent;
+  /* 初期状態でボーダーを透明に */
+  border-radius: 3px;
+  /* ボタンのようにするため角を丸く */
 }
 
 .GlobalNavigation a:hover {
   background-color: #8c2323;
-  border: 1px solid #ffffff; /* ホバー時にボーダーを目立たせる */
+  border: 1px solid #ffffff;
+  /* ホバー時にボーダーを目立たせる */
 }
 
 nav a {
   font-size: larger;
 }
 
+/*旧枠はold.htmlの埋め込みCSSに移動*/
 
-.Duo {
-  margin-bottom: 1.5rem;
+/* 新枠デザイン */
+.Waku {
+  border: 5px solid #000;
+  /* 枠の太さと色 */
+  padding: 40px;
+  /* 内側の余白 */
+  background-color: #ffffff;
+  /* 背景色 */
+  box-sizing: border-box;
+  /* 枠とパディングを含めたボックスサイズ */
 }
-.Duo169Contents {
-  position: relative;
-  height: 0;
-  margin-bottom: 20px;
-  padding-bottom: 56.25%;
-  overflow: hidden;
+
+.title {
+  font-size: 30px;
+  font-family: "Kiwi Maru", serif;
+  border-left: 10px solid #000;
+  /* タイトルの左側にのみ線を追加 */
+  padding-left: 15px;
+  margin-bottom: 50px;
 }
-.Duo169Contents iframe {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
+
+.Waku p {
+  color: #020241;
+  font-size: 23px;
+  line-height: 160%;
 }
-.Duo209Contents {
-  position: relative;
-  height: 0;
-  margin-bottom: 20px;
-  padding-bottom: 45%;
-  overflow: hidden;
+
+.Waku .image-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* 画像間のスペース */
 }
-.Duo209Contents iframe {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
+
+.Waku picture {
+  display: block;
+  width: 32%;
+  /* 3列に収まるように幅を設定 */
 }
-.Duo img {
-  width: 100%;
-}
-@media screen and (min-width: 600px) {
-  .Duo169-right {
-    float: right;
-    width: 49.5%;
-  }
-  .Duo169-left {
-    float: left;
-    width: 49.5%;
-  }
-  .Duo209-right {
-    float: right;
-    width: 49.5%;
-  }
-  .Duo209-left {
-    float: left;
-    width: 49.5%;
-  }
-  .Duo:after {
-    display: block;
-    clear: both;
-    content: "";
-  }
-}
-@media screen and (max-width: 600px) {
-  header {
-    height: 160px;
-    font-size: large;
-    line-height: 160px;
-  }
-  .GlobalNavigation ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-  }
-  .GlobalNavigation li {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-  .Duo169-right,
-  .Duo169-left,
-  .Duo209-right,
-  .Duo209-left {
-    float: none;
-    width: 100%;
-  }
+
+.Waku img {
+  width: 256px;
+  /* 画像が親要素(picture)に合わせてサイズを調整 */
+  height: auto;
 }
 
 /*リンクボタンデザイン
@@ -209,66 +190,84 @@ a.btn--orange:hover {
 a.btn--white {
   color: #eb6100;
   background-color: #fff;
-  border: 1px solid #eb6100; /* Optional: ボーダーを追加する場合 */
+  border: 1px solid #eb6100;
+  /* Optional: ボーダーを追加する場合 */
 }
 
 .btn--white:hover,
 a.btn--white:hover {
   color: #eb6100;
-  background-color: #f5f5f5; /* ホバー時に少し灰色に */
+  background-color: #f5f5f5;
+  /* ホバー時に少し灰色に */
 }
 
 
 a.btn--radius {
   border-radius: 100vh;
 }
-/*リンクボタンデザインここまで*/
+/* 埋め込みリンクセクション */
 
+#EmbeddedLink ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* 自動で列を調整 */
+  gap: 1rem;
+  /* 項目間のスペース */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  /* リストのデフォルトマーカーを削除 */
+}
 
 #EmbeddedLink li {
- padding-bottom: 0.5rem;
- list-style: none;
+  padding: 0.5rem;
+  text-align: center;
+  /* コンテンツを中央揃え */
+  background-color: #f9f9f9;
+  /* 背景色を追加 */
+  border: 1px solid #ddd;
+  /* 軽い境界線を追加 */
+  border-radius: 8px;
+  /* 角を丸くする */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* 軽い影 */
 }
-#EmbeddebLink li a {
+
+#EmbeddedLink li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  /* テキストの色 */
   padding: 1rem;
 }
 
-/*旧枠はold.htmlの埋め込みCSSに移動*/
-
-/* 新枠デザイン */
-.Waku {
-  border: 5px solid #000; /* 枠の太さと色 */
-  padding: 40px; /* 内側の余白 */
-  background-color: #ffffff; /* 背景色 */
-  box-sizing: border-box; /* 枠とパディングを含めたボックスサイズ */
-}
-
-.title {
-  font-size: 30px;
-  font-family: "Kiwi Maru", serif;
-  border-left: 10px solid #000; /* タイトルの左側にのみ線を追加 */
-  padding-left: 15px;
-  margin-bottom: 50px;
-}
-
-.Waku p {
-  color: #020241;
-  font-size: 23px;
-  line-height: 160%;
-}
-.Waku .image-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 10px; /* 画像間のスペース */
-}
-
-.Waku picture {
-  display: block;
-  width: 32%; /* 3列に収まるように幅を設定 */
-}
-
-.Waku img {
-  width: 256px; /* 画像が親要素(picture)に合わせてサイズを調整 */
+#EmbeddedLink li img {
+  max-width: 100%;
+  /* 画像をボックスに収める */
   height: auto;
+  border: none;
+}
+
+/* モバイル表示 */
+@media screen and (max-width: 450px) {
+  header {
+    height: 160px;
+    font-size: large;
+    line-height: 160px;
+  }
+
+  .GlobalNavigation ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .GlobalNavigation li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  #EmbeddedLink ul.grid-list {
+    grid-template-columns: 1fr;
+  }
 }
