@@ -69,6 +69,45 @@ nav ol:last-child {
     margin-bottom: 0;
 }
 
+.list-large {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.list-large li {
+    width: 30%;
+    /* 初期状態で3列表示 */
+    margin-bottom: 10px;
+}
+
+/* 画面幅が1500px未満のとき */
+@media (max-width: 1500px) {
+    .list-large li {
+        width: 45%;
+        /* 2列表示 */
+    }
+}
+
+/* 画面幅が1000px未満のとき*/
+@media (max-width: 1000px) {
+    .list-large li {
+        width: 100%;
+        /* 1列表示 */
+    }
+}
+
+/* さらに文字が多く、より厳しく分割数を減らす場合 */
+@media (max-width: 480px) {
+    .list-large li {
+        width: 100%;
+        /* 文字数が多い場合、1列に強制する */
+        font-size: 1.1em;
+        /* 文字サイズを少し大きくして見やすく */
+    }
+}
+
 a[title="🔙戻る"] {
     display: inline-block;
     margin-bottom: 20px;
