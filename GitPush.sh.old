@@ -1,7 +1,32 @@
 #!/bin/bash
-cd "/var/www/"
-d=`date "+%F"` #全体をバッククォートで囲む
-echo $d
+# ヘルプは -h/--help または下部の show_help() を参照
+set -euo pipefail
+
+show_help() {
+	cat <<'EOF'
+Usage: GitPush.sh.old [WORKDIR=/var/www]
+
+Adds all, commits with date string, and pushes to origin/main.
+
+Options:
+	-h, --help   Show this help and exit
+
+Examples:
+	./GitPush.sh.old               # uses /var/www
+	./GitPush.sh.old /path/to/dir  # uses specified directory
+EOF
+}
+
+if [[ "${1:-}" == "-h" || "${1:-}" == "--help" ]]; then
+	show_help
+	exit 0
+fi
+
+WORKDIR="${1:-/var/www}"
+cd "$WORKDIR"
+d="$(date "+%F")"
+echo "$d"
 git add .
-git commit -m "$dに自動Push"
+# allow empty commit to be skipped without failing the script
+git commit -m "${d}に自動Push" || true
 git -c core.sshCommand="ssh -i /root/.ssh/github" push origin main

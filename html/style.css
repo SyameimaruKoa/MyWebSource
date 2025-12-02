@@ -205,6 +205,7 @@ a.btn--white:hover {
 a.btn--radius {
   border-radius: 100vh;
 }
+
 /* 埋め込みリンクセクション */
 
 #EmbeddedLink ul {
@@ -267,7 +268,7 @@ a.btn--radius {
     margin-bottom: 10px;
   }
 
-  #EmbeddedLink ul.grid-list {
+  #EmbeddedLink ul {
     grid-template-columns: 1fr;
   }
 }

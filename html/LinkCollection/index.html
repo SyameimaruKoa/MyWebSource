@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>自分向けリンク集</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style-watch.css" media="screen and (max-width:400px)">
     <link rel="stylesheet" href="style.css" media="screen and (min-width:401px)">
 </head>
 
 <body>
     <h1>ここには自分のブクマが使えない時用のよく使うリンクを置いています</h1>
-    <a href="javascript:history.back();">🔙戻る</a>/<a href="../">サイトトップに戻る</a><br>
+    <a href="javascript:history.back();" class="back-link">🔙戻る</a>/<a href="../">サイトトップに戻る</a><br>
     <div class="toc">
         <nav>
             <h2>目次</h2>
@@ -19,9 +20,6 @@
                 <li><a href="#music">動画</a></li>
                 <li><a href="#mad">音MAD</a></li>
                 <li><a href="#update">Galaxy Update date</a></li>
-                <ul>
-                    <h3>ウェブツール</h3>
-                </ul>
                 <li><a href="#tools">Webツール</a></li>
                 <li><a href="#uploader">アップローダー</a></li>
                 <li><a href="#clock">時計</a></li>
@@ -38,99 +36,92 @@
     </div>
     <nav>
         <h2>リンク集</h2>
-        <ol>
-            <ul>
-                <h3 id="video">映像視聴 /<a href="javascript:history.back();">🔙戻る</a></h3>
-            </ul>
+        <h3 id="video">映像視聴 /<a href="javascript:history.back();" class="back-link">🔙戻る</a></h3>
+        <ul>
             <li><a href="https://www.nicovideo.jp/">niconico</a></li>
             <li><a href="https://www.youtube.com/">YouTube</a></li>
             <li><a href="https://music.youtube.com/">YouTube Music</a></li>
             <li><a href="https://iptv-org.github.io/">iptv-org</a></li>
-        </ol>
-        <ol>
-            <ul>
-                <h3>動画の直リン</h3>
-            </ul>
+        </ul>
+        <h3>動画の直リン</h3>
+        <ul>
             <li><video preload="metadata" controls
                     src="https://github.com/SyameimaruKoa/first-website/raw/refs/heads/main/mov/iuAQaICenWBW5LrN.mp4">軽量級</video>
             </li>
             <li><video preload="metadata" controls src="https://files.catbox.moe/3q95qs.mp4">重量級</video>
-        </ol>
-        <ol>
-            <ul>
-                <h3 id="music">動画 /<a href="javascript:history.back();">🔙戻る</a></h3>
-            </ul>
-            <div class="list-large">
-                <li><a href="https://www.youtube.com/watch?v=xkuAg3q0JXk">フレームテスト(自分の動画)<br>
-                        (FHD/60fps)</a></li>
-                <li><a href="https://www.youtube.com/watch?v=stmZAThUl64">【Original Song】High Tide - Moona
-                        Hoshinova【Animated MV】<br>
-                        (4K/24fps 字幕付き)
-                    </a></li>
-                <li><a href="https://www.youtube.com/watch?v=ijSYp6N5Yrs">Best 5.1 Surround Sound Test - By DTS<br>
-                        (4K HDR/24fps 5.1ch)</a></li>
-                <li><a href="https://www.youtube.com/watch?v=TfOx00AOfKo">ライメイ / 常闇トワ(official)<br>
-                        (FHD/30fps カラオケ&翻訳字幕付き)</a></li>
-                <li><a href="https://www.nicozon.net/watch/sm42769085">【オリジナル楽曲】粛聖!! ロリ神レクイエム☆ / しぐれうい（9さい）</a>/
-                    <a href="https://www.nicovideo.jp/watch/sm42769085">ニコ動公式</a>
-                </li>
-                <li><a href="https://www.nicozon.net/watch/so38030941">【MV】First Step /
-                        長瀬麻奈（CV:神田沙也加）作詞：PA-NON　作曲・編曲：田中秀和（MONACA）【IDOLY PRIDE】</a></li>
-                <li><a href="https://www.nicozon.net/watch/so38031752">【アニメーションMV】First Step /
-                        長瀬麻奈（CV:神田沙也加）作詞：PA-NON　作曲・編曲：田中秀和（MONACA）【IDOLY PRIDE】</a></li>
-                <li><a href="https://www.nicozon.net/watch/so38031509">神田沙也加（長瀬麻奈役）「First Step」バーチャルライブ映像【IDOLY
-                        PRIDE】</a></li>
-                <li><a href="https://www.nicozon.net/watch/so38031590">神田沙也加（長瀬麻奈役）「星の海の記憶」バーチャルライブ映像【IDOLY PRIDE】</a>
-                </li>
-                <li><a href="https://www.nicozon.net/watch/so36558630">【IDOLY PRIDE】長瀬麻奈紹介ムービー</a></li>
-            </div>
-        </ol>
-        <ol>
-            <ul>
-                <h3 id="mad">音MAD /<a href="javascript:history.back();">🔙戻る</a></h3>
-            </ul>
-            <div class="list-large">
-                <!-- <li><a href=""></a></li> -->
-                <li><a href="https://www.nicozon.net/watch/sm9041543">ブロリーでおどるポンポコリン</a></li>
-                <li><a href="https://www.nicozon.net/watch/sm20651926">俺は勉強が嫌い也【Z会×ニャル子さんW】</a></li>
-                <li><a href="https://www.nicozon.net/watch/sm23920860">野々しくて</a></li>
-                <li><a href="https://www.nicozon.net/watch/sm4873249">スーパー「おめーの席ねぇから！」デラックス</a></li>
-                <li><a href="https://www.nicozon.net/watch/sm25844477">にこにーが吹　っ　切　れ　た</a></li>
-                <li><a href="https://www.nicozon.net/watch/sm12804601">危険な佐天さん</a></li>
-                <li><a href="https://www.nicozon.net/watch/sm23833559">ほあ魔女カーニバル!!</a></li>
-                <li><a href="https://www.nicozon.net/watch/sm23914262">スーパー命がけでｯﾍｯﾍｴｴｪｴｪｴｴｲ↑↑↑↑デラックス</a></li>
-                <li><a href="https://www.nicozon.net/watch/sm35877537">Bad Pepsi!! feat. 本田圭佑</a></li>
-                <li><a href="https://www.nicozon.net/watch/sm39507889">平安名すみれのギャラクシーレーシング</a></li>
-                <li><a href="https://www.nicozon.net/watch/sm34905921">令和れいわレイワれいワレいわレイわれイワれいわ令和であります</a></li>
-                <li><a href="https://www.nicozon.net/watch/sm33565109">矢澤やざわヤザワやざワヤざわヤザわやザワやざわ矢澤にこにこー♪</a></li>
-            </div>
-        </ol>
-        <ol>
-            <h3 id="update">Galaxy Update date /<a href="javascript:history.back();">🔙戻る</a></h3>
+            </li>
+        </ul>
+        <h3 id="music">動画 /<a href="javascript:history.back();" class="back-link">🔙戻る</a></h3>
+        <ul class="list-large">
+            <li><a href="https://www.youtube.com/watch?v=xkuAg3q0JXk">フレームテスト(自分の動画)<br>
+                    (FHD/60fps)</a></li>
+            <li><a href="https://www.youtube.com/watch?v=stmZAThUl64">【Original Song】High Tide - Moona
+                    Hoshinova【Animated MV】<br>
+                    (4K/24fps 字幕付き)
+                </a></li>
+            <li><a href="https://www.youtube.com/watch?v=ijSYp6N5Yrs">Best 5.1 Surround Sound Test - By DTS<br>
+                    (4K HDR/24fps 5.1ch)</a></li>
+            <li><a href="https://www.youtube.com/watch?v=TfOx00AOfKo">ライメイ / 常闇トワ(official)<br>
+                    (FHD/30fps カラオケ&翻訳字幕付き)</a></li>
+            <li><a href="https://www.nicozon.net/watch/sm42769085">【オリジナル楽曲】粛聖!! ロリ神レクイエム☆ / しぐれうい（9さい）</a>/
+                <a href="https://www.nicovideo.jp/watch/sm42769085">ニコ動公式</a>
+            </li>
+            <li><a href="https://www.nicozon.net/watch/so38030941">【MV】First Step /
+                    長瀬麻奈（CV:神田沙也加）作詞：PA-NON　作曲・編曲：田中秀和（MONACA）【IDOLY PRIDE】</a></li>
+            <li><a href="https://www.nicozon.net/watch/so38031752">【アニメーションMV】First Step /
+                    長瀬麻奈（CV:神田沙也加）作詞：PA-NON　作曲・編曲：田中秀和（MONACA）【IDOLY PRIDE】</a></li>
+            <li><a href="https://www.nicozon.net/watch/so38031509">神田沙也加（長瀬麻奈役）「First Step」バーチャルライブ映像【IDOLY
+                    PRIDE】</a></li>
+            <li><a href="https://www.nicozon.net/watch/so38031590">神田沙也加（長瀬麻奈役）「星の海の記憶」バーチャルライブ映像【IDOLY PRIDE】</a>
+            </li>
+            <li><a href="https://www.nicozon.net/watch/so36558630">【IDOLY PRIDE】長瀬麻奈紹介ムービー</a></li>
+        </ul>
+        <h3 id="mad">音MAD /<a href="javascript:history.back();" class="back-link">🔙戻る</a></h3>
+        <ul class="list-large">
+            <!-- <li><a href=""></a></li> -->
+            <li><a href="https://www.nicozon.net/watch/sm9041543">ブロリーでおどるポンポコリン</a></li>
+            <li><a href="https://www.nicozon.net/watch/sm20651926">俺は勉強が嫌い也【Z会×ニャル子さんW】</a></li>
+            <li><a href="https://www.nicozon.net/watch/sm23920860">野々しくて</a></li>
+            <li><a href="https://www.nicozon.net/watch/sm4873249">スーパー「おめーの席ねぇから！」デラックス</a></li>
+            <li><a href="https://www.nicozon.net/watch/sm25844477">にこにーが吹　っ　切　れ　た</a></li>
+            <li><a href="https://www.nicozon.net/watch/sm12804601">危険な佐天さん</a></li>
+            <li><a href="https://www.nicozon.net/watch/sm23833559">ほあ魔女カーニバル!!</a></li>
+            <li><a href="https://www.nicozon.net/watch/sm23914262">スーパー命がけでｯﾍｯﾍｴｴｪｴｪｴｴｲ↑↑↑↑デラックス</a></li>
+            <li><a href="https://www.nicozon.net/watch/sm35877537">Bad Pepsi!! feat. 本田圭佑</a></li>
+            <li><a href="https://www.nicozon.net/watch/sm39507889">平安名すみれのギャラクシーレーシング</a></li>
+            <li><a href="https://www.nicozon.net/watch/sm34905921">令和れいわレイワれいワレいわレイわれイワれいわ令和であります</a></li>
+            <li><a href="https://www.nicozon.net/watch/sm33565109">矢澤やざわヤザワやざワヤざわヤザわやザワやざわ矢澤にこにこー♪</a></li>
+        </ul>
+        <h3 id="update">Galaxy Update date /<a href="javascript:history.back();" class="back-link">🔙戻る</a></h3>
+        <div>
             <div class="list-group">
                 <h4>S21</h4>
-                <li><a href="https://doc.samsungmobile.com/SCG09/KDI/doc.html">Galaxy S21 5G KDI Update</a></li>
+                <ul>
+                    <li><a href="https://doc.samsungmobile.com/SCG09/KDI/doc.html">Galaxy S21 5G KDI Update</a></li>
+                </ul>
             </div>
 
             <div class="list-group">
                 <h4>S21 Ultra</h4>
-                <li><a href="https://doc.samsungmobile.com/SC-52B/DCM/doc.html">Galaxy S21 Ultra 5G DCM Update</a>
-                </li>
+                <ul>
+                    <li><a href="https://doc.samsungmobile.com/SC-52B/DCM/doc.html">Galaxy S21 Ultra 5G DCM Update</a>
+                    </li>
+                </ul>
             </div>
 
             <div class="list-group">
                 <h4>S22 Ultra</h4>
-                <li><a href="https://doc.samsungmobile.com/SC-52C/DCM/doc.html">Galaxy S22 Ultra DCM Update</a></li>
-                <li><a href="https://doc.samsungmobile.com/SCG14/KDI/doc.html">Galaxy S22 Ultra KDI Update</a></li>
+                <ul>
+                    <li><a href="https://doc.samsungmobile.com/SC-52C/DCM/doc.html">Galaxy S22 Ultra DCM Update</a></li>
+                    <li><a href="https://doc.samsungmobile.com/SCG14/KDI/doc.html">Galaxy S22 Ultra KDI Update</a></li>
+                </ul>
             </div>
-        </ol>
+        </div>
 
 
         <h3>ウェブツール</h3>
-        <ol>
-            <ul>
-                <h3 id="tools">Webツール /<a href="javascript:history.back();">🔙戻る</a></h3>
-            </ul>
+        <h3 id="tools">Webツール /<a href="javascript:history.back();" class="back-link">🔙戻る</a></h3>
+        <ul>
             <li><a href="https://discord.com/app">Discord</a></li>
             <li><a href="https://vgmstream.org/">vgmstream</a></li>
             <li><a href="https://squoosh.app/">Squoosh</a></li>
@@ -140,44 +131,32 @@
             <li><a href="https://cobalt.tools/">動画&音楽ダウンローダー</a></li>
             <li><a href="https://www.shazam.com/ja-jp/apps">Shazam音楽捜索</a></li>
             <li><a href="https://browser.geekbench.com/user/SyameimaruKoa">GeekBench SyameimaruKoa's Score</a></li>
-        </ol>
-        <ol>
-            <ul>
-                <h3 id="uploader">アップローダー /<a href="javascript:history.back();">🔙戻る</a></h3>
-            </ul>
+        </ul>
+        <h3 id="uploader">アップローダー /<a href="javascript:history.back();" class="back-link">🔙戻る</a></h3>
+        <ul>
             <li><a href="https://gigafile.nu/">GigaFile(ギガファイル)便<br>
                     300GB/file - 3d~100d</a></li>
             <li><a href="https://transfer.it/start">Transfer By MEGA<br>
                     InfinityGB/file - 7d~80d <strong>(広告無し)</strong></a> 削除はMEGA垢に要ログイン</li>
-            <li>
-                <p>直リンOK</p>
-            </li>
-            <ol>
-                <li><a href="https://catbox.moe/">Catbox<br>
-                        200MB/file - Infinity</a>/<a href="https://catbox.moe/user/login.php">削除は要ログイン</a></li>
-                <li><a href="https://litterbox.catbox.moe/">Litterbox<br>
-                        1GB/file - 1h~3d</a></li>
-                <li><a href="https://uguu.se/">uguu<br>
-                        64MB/file - 6h</a></li>
-            </ol>
-        </ol>
-        <ol>
-            <ul>
-                <h3 id="clock">時計 /<a href="javascript:history.back();">🔙戻る</a></h3>
-            </ul>
+            <li><strong>直リンOK</strong></li>
+            <li><a href="https://catbox.moe/">Catbox<br>
+                    200MB/file - Infinity</a>/<a href="https://catbox.moe/user/login.php">削除は要ログイン</a></li>
+            <li><a href="https://litterbox.catbox.moe/">Litterbox<br>
+                    1GB/file - 1h~3d</a></li>
+            <li><a href="https://uguu.se/">uguu<br>
+                    64MB/file - 6h</a></li>
+        </ul>
+        <h3 id="clock">時計 /<a href="javascript:history.back();" class="back-link">🔙戻る</a></h3>
+        <ul>
             <li><a href="https://digital.onl.jp/">デジタル時計</a></li>
             <li><a href="https://www.nict.go.jp/JST/JST5.html">JST Clock</a></li>
-        </ol>
-        <ol>
-            <ul>
-                <h3 id="archive">Webアーカイブ /<a href="javascript:history.back();">🔙戻る</a></h3>
-            </ul>
+        </ul>
+        <h3 id="archive">Webアーカイブ /<a href="javascript:history.back();" class="back-link">🔙戻る</a></h3>
+        <ul>
             <li><a href="http://web.archive.org/">Wayback Machine</a></li>
-        </ol>
-        <ol>
-            <ul>
-                <h3 id="games">Webゲーム /<a href="javascript:history.back();">🔙戻る</a></h3>
-            </ul>
+        </ul>
+        <h3 id="games">Webゲーム /<a href="javascript:history.back();" class="back-link">🔙戻る</a></h3>
+        <ul>
             <li><a href="https://sushida.net/">寿司打</a></li>
             <li><a href="https://mesiro101.itch.io/holotyping">Holotyping</a></li>
             <li><a href="https://unityroom.com/games/holo_watermelon">#ホロのスイカ</a></li>
@@ -189,21 +168,17 @@
             </li>
             <li><a href="https://duckduckgo.com/?q=DuckDuckGo+AI+Chat&ia=chat&duckai=1">DuckDuckGo AI
                     Chat(匿名ChatAI利用)</a></li>
-        </ol>
-        <ol>
-            <ul>
-                <h3 id="mobilebasestation">モバイル基地局エリアマップ /<a href="javascript:history.back();">🔙戻る</a></h3>
-            </ul>
+        </ul>
+        <h3 id="mobilebasestation">モバイル基地局エリアマップ /<a href="javascript:history.back();" class="back-link">🔙戻る</a></h3>
+        <ul>
             <li><a href="https://www.nttdocomo.co.jp/area/servicearea/smt/?rgcd=03&cmcd=LTE&scale=128000">docomo</a>
             </li>
             <li><a href="https://www.au.com/mobile/area/map/">au</a></li>
             <li><a href="https://network.mobile.rakuten.co.jp/area/map.html?l-id=area_area_map_5g">Rakuten</a></li>
             <li><a href="https://www.softbank.jp/mobile/network/area/map/">SoftBank</a></li>
-        </ol>
-        <ol>
-            <ul>
-                <h3 id="speedtest">ネットスピテス /<a href="javascript:history.back();">🔙戻る</a></h3>
-            </ul>
+        </ul>
+        <h3 id="speedtest">ネットスピテス /<a href="javascript:history.back();" class="back-link">🔙戻る</a></h3>
+        <ul>
             <li><a href="https://www.google.com/search?q=Speed+Test">Googleスピードテスト</a></li>
             <li><a href="https://fast.com/ja/">Fast.com</a></li>
             <li><a href="https://www.speedtest.net/">Speedtest by Ookla</a></li>
@@ -213,11 +188,9 @@
             <li><a href="https://minsoku.net/stb_check">ネット回線の安定度をワンクリック測定！(みんそく)</a></li>
             <li><a href="https://speed.cloudflare.com/">Cloudflare | Internet Speed Test</a></li>
             <li><a href="https://probe.easebar.com/Admin/cases/MarvelRivals">MarvelRivals ネットワークテスト</a></li>
-        </ol>
-        <ol>
-            <ul>
-                <h3 id="networkcheck">ネットワーク確認系 /<a href="javascript:history.back();">🔙戻る</a></h3>
-            </ul>
+        </ul>
+        <h3 id="networkcheck">ネットワーク確認系 /<a href="javascript:history.back();" class="back-link">🔙戻る</a></h3>
+        <ul>
             <li><a href="https://test-ipv6.com/index.html.ja_JP">IPv6 Test</a></li>
             <li><a href="http://v6v4.net/">パブリックIP v4 or v6確認</a></li>
             <li><a href="https://www.aguse.jp/">ウェブ調査</a></li>
@@ -227,11 +200,9 @@
             <li><a href="https://horobi.com/Saiteika/">画像圧縮確認</a></li>
             <li><a href="https://check.torproject.org/?lang=ja">Tor接続確認</a></li>
             <li><a href="https://www.cloudflare.com/cdn-cgi/trace/">Cloudflare WARP接続確認</a></li>
-        </ol>
-        <ol>
-            <ul>
-                <h3 id="benchmark">ベンチマーク /<a href="javascript:history.back();">🔙戻る</a></h3>
-            </ul>
+        </ul>
+        <h3 id="benchmark">ベンチマーク /<a href="javascript:history.back();" class="back-link">🔙戻る</a></h3>
+        <ul>
             <li><a href="https://web.basemark.com/">ベースマーク Web 3.0</a></li>
             <li><a href="https://chromium.github.io/octane/">Octane 2.0 JavaScript Benchmark</a></li>
             <li><a href="https://octane.webmarks.info/ja/">Octane 2.0 plus</a></li>
@@ -239,30 +210,26 @@
             <li><a href="https://browserbench.org/Speedometer2.1/">Speedometer 2.1</a></li>
             <li><a href="https://browserbench.org/Speedometer3.0/">Speedometer 3.0</a></li>
             <li><a href="https://mozilla.github.io/krakenbenchmark.mozilla.org/">Kraken JavaScript Benchmark</a></li>
-        </ol>
-        <ol>
-            <ul>
-                <h3 id="edit">編集ツール /<a href="javascript:history.back();">🔙戻る</a></h3>
-            </ul>
+        </ul>
+        <h3 id="edit">編集ツール /<a href="javascript:history.back();" class="back-link">🔙戻る</a></h3>
+        <ul>
             <li><a href="https://vscode.dev/">Visual Studio Code</a></li>
             <li><a href="https://ffmpegwasm.netlify.app/playground">FFMPEG.WASM</a></li>
             <li><a href="https://wiz.ooo/life/youtube-thumbnail-downloader">YouTubeサムネ保存</a></li>
             <li><a href="http://txt.3m3g.com/index2.php">オンライン重複行削除ツール</a></li>
             <li><a href="https://difff.jp/">テキスト比較</a></li>
-        </ol>
-        <ol>
-            <ul>
-                <h3 id="WiiU">WiiU関連 /<a href="javascript:history.back();">🔙戻る</a></h3>
-            </ul>
+        </ul>
+        <h3 id="WiiU">WiiU関連 /<a href="javascript:history.back();" class="back-link">🔙戻る</a></h3>
+        <ul>
             <li><a href="https://dumplingapp.com/">Dompling exploit (OFW状態限定)<br>
                     （WiiU起動時にRを押すとOFWで起動する）</a></li>
             <li><a href="http://file.gutyan.jp/wiiu/hbl">WiiU 5.5.x HBL (はりを改造版JsTypeHax)</a></li>
             <li><a href="https://wiiuexploit.xyz/firmware/55X.html">5.5.X Exploit</a></li>
-        </ol>
+        </ul>
     </nav>
-    <a href="javascript:history.back();">🔙戻る</a><br><br>
+    <a href="javascript:history.back();" class="back-link">🔙戻る</a><br><br>
     <a href="../">サイトトップに戻る</a><br>
-    <small><a href="https://twpf.jp/SyameimaruKoa" target="_blank">射命丸こあ@ツイフィール</a></small>
+    <small><a href="https://twpf.jp/SyameimaruKoa" target="_blank" rel="noopener noreferrer">射命丸こあ@ツイフィール</a></small>
 </body>
 
 </html>

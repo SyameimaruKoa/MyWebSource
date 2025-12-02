@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>そのページは存在しません</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
             width: 90%;
@@ -23,14 +24,17 @@
     <div id="main">
         <h1>
             <a href="https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/404%20NotFound.png"
-                target="_blank">
+                target="_blank" rel="noopener noreferrer">
                 <picture>
-                    <source type="image/webp" srcset="/ErrorConnect/img/NotFound.png.webp">
-                    <img style="max-width: 90%;" src="/ErrorConnect/img/NotFound.png" alt="- 404 Not Found -">
+                    <source type="image/webp" srcset="img/NotFound.png.webp, /ErrorConnect/img/NotFound.png.webp">
+                    <img style="max-width: 90%;" src="img/NotFound.png"
+                        onerror="if(this.src!=='img/NotFound.png'&&this.src.indexOf('/ErrorConnect/')===-1)this.src='/ErrorConnect/img/NotFound.png'"
+                        alt="- 404 Not Found -" loading="lazy" decoding="async">
                 </picture>
             </a>
             <p style="position:absolute;top:8%;left:10%;font-size:30px;color: white;padding:0;margin:0;">画像は<a
-                    href="https://twitter.com/sawaratsuki1004" target="_blank">さわらつき</a>さんより</p>
+                    href="https://twitter.com/sawaratsuki1004" target="_blank" rel="noopener noreferrer">さわらつき</a>さんより
+            </p>
         </h1>
     </div>
 </body>

@@ -1,8 +1,14 @@
 @charset "UTF-8";
+
 body {
   font-size: 16px;
   line-height: 1.4;
   padding: 10px;
+}
+
+video {
+  width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -22,8 +28,7 @@ nav h4 {
   color: #444;
 }
 
-
-nav ol {
+nav ul {
   padding-left: 20px;
 }
 
