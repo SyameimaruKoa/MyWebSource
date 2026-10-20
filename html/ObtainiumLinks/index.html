@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#101e36">
+    <meta name="description" content="Obtainiumにアプリを簡単に登録するための個人用リンク集。">
+    <title>Obtainium 登録リンク集</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./apps.js"></script>
+    <script defer src="./main.js"></script>
+</head>
+<body>
+    <div class="page-shell">
+        <header class="page-header">
+            <a class="back-link" href="../">← サイトの既存リンク集へ</a>
+            <p class="eyebrow">ANDROID / OBTAINIUM</p>
+            <h1>Obtainium 登録リンク集</h1>
+            <p class="introduction">アプリ名をタップするだけでObtainiumへ登録。APKの種類や設定を保持した個人用リンク集じゃ。</p>
+        </header>
+
+        <main>
+            <section class="controls" aria-label="リンクの絞り込み">
+                <label for="search">アプリを探す</label>
+                <div class="search-row">
+                    <input id="search" type="search" placeholder="アプリ名・配布元など" autocomplete="off">
+                    <button id="clear-search" class="clear-search" type="button" hidden>消去</button>
+                </div>
+                <div class="filter-row" aria-label="アーキテクチャ">
+                    <button type="button" data-architecture="すべて" aria-pressed="true">すべて</button>
+                    <button type="button" data-architecture="ARM64" aria-pressed="false">ARM64</button>
+                    <button type="button" data-architecture="ARMv7" aria-pressed="false">32bit</button>
+                    <button type="button" data-architecture="共通" aria-pressed="false">共通</button>
+                </div>
+                <p id="summary" class="summary" role="status" aria-live="polite"></p>
+            </section>
+
+            <div id="results" aria-label="アプリのリンク一覧"></div>
+            <p id="empty" class="empty-message" hidden>該当するアプリが見つからぬ。検索語やフィルターを変えてみるのじゃ。</p>
+
+            <aside class="page-note">
+                <h2>使い方</h2>
+                <p>「Obtainiumに追加」を押すと、Obtainiumのインポート用リンクを開く。うまく開けない場合は「登録URLをコピー」を使うのじゃ。</p>
+                <p>このページはアプリのAPKを配布しておらぬ。登録設定と元のGitHubへのリンクだけを掲載しておる。</p>
+            </aside>
+        </main>
+
+        <footer>
+            <p>リンクの追加・変更は <code>ObtainiumLinks/apps.js</code> に1件ずつ追記するだけじゃ。</p>
+            <a href="../">元のリンク集に戻る</a>
+        </footer>
+    </div>
+</body>
+</html>
